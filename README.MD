@@ -37,7 +37,7 @@ o mesmo foi uma copia do projeto DevLinks da Rocketseat para estudo de alunos, m
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/file/SIMZABjmiyDXOKhe9l1cSV/DevLinks-%E2%80%A2-Projeto-Discover-(Community)?type=design&node-id=1437%3A191&mode=design&t=HY42yh0fvlUrASFe-1/duplicate). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Você pode visualizar o layout do projeto através [DESSE LINK](<https://www.figma.com/file/SIMZABjmiyDXOKhe9l1cSV/DevLinks-%E2%80%A2-Projeto-Discover-(Community)?type=design&node-id=1437%3A191&mode=design&t=HY42yh0fvlUrASFe-1/duplicate>). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
 ## :memo: Licença
 
@@ -46,5 +46,3 @@ Esse projeto está sob a licença MIT.
 ---
 
 Feito com ♥ by Rocketseat :wave: [Participe da nossa comunidade!](https://discord.gg/rocketseat)
-
-
