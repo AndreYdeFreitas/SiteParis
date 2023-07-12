@@ -92,6 +92,7 @@ body * {
   border-radius: 9999px;
   border: 1px solid var(--stroke-color);
   background: var(--surface-color);
+  backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
 
@@ -163,8 +164,8 @@ footer {
 
 /* midia queries */
 
-@midia (min-width 700px) {
-  :root {
+  @media (min-width: 700px) {
+    :root {
     --bg-url: url(./assets/bg-desktop.jpg);
   }
 
