@@ -4,37 +4,35 @@
   box-sizing: border-box;
 }
 :root {
- --text-color: white;
- --bg-url: url(./assets/bg-mobile.jpg);
---stroke-color:rgba(255, 255, 255, 0.5) ;
---surface-color: rgba(255, 255, 255, 0.05);
---surface-color-hover: rgba(0,0,0,0.2);
---hightlight-color: rgba(48, 1, 34, 0.618);
---switch-bg-url: url(./assets/MoonStars.svg);
---hightlight-color-special: rgba(104, 101, 101, 0.374);
-
+  --text-color: white;
+  --bg-url: url(./assets/bg-mobile.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.2);
+  --hightlight-color: rgba(48, 1, 34, 0.618);
+  --switch-bg-url: url(./assets/MoonStars.svg);
+  --hightlight-color-special: rgba(104, 101, 101, 0.374);
 }
 
 .light {
---text-color: black;
---bg-url: url(./assets/bg-mobile-light.jpg);
---stroke-color: rgba(0, 0, 0, 0.5);
---surface-color: rgba(0, 0, 0, 0.05);
-transition: background 02s;
---surface-color-hover: rgba(255,255,255,0.05);
---hightlight-color: rgba(78, 3, 78, 0.499);
---switch-bg-url: url(./assets/Sun.svg);
---hightlight-color-special: rgba(104, 101, 101, 0.374);
+  --text-color: black;
+  --bg-url: url(./assets/bg-mobile-light.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05);
+  transition: background 02s;
+  --surface-color-hover: rgba(255, 255, 255, 0.05);
+  --hightlight-color: rgba(78, 3, 78, 0.499);
+  --switch-bg-url: url(./assets/Sun.svg);
+  --hightlight-color-special: rgba(104, 101, 101, 0.374);
 }
 
 body {
-
   background: var(--bg-url) no-repeat top center/cover;
   height: 100vh;
 }
 body * {
   font-family: "Inter", sans-serif;
-  color:var(--text-color);
+  color: var(--text-color);
 }
 
 #container {
@@ -59,48 +57,43 @@ body * {
 }
 /*switch*/
 #switch {
-position: relative;
-width: 64px;
-margin: 0 auto;
-display: ;
-
+  position: relative;
+  width: 64px;
+  margin: 0 auto;
 }
 #switch button {
-width: 32px;
-height: 32px;
-background: white var(--switch-bg-url) no-repeat center;
-border:0;
-border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  background: white var(--switch-bg-url) no-repeat center;
+  border: 0;
+  border-radius: 50%;
 
-position: absolute;
-z-index: 1;
-left: 0;
-transform: translateY(-50%);
-top: 50%;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  transform: translateY(-50%);
+  top: 50%;
 
-animation: slide-back 0.4s;
+  animation: slide-back 0.4s;
 }
 
 .light #switch button {
-animation: slide-in 0.3s forwards;
+  animation: slide-in 0.3s forwards;
 }
 
 #switch button:hover {
   outline: 8px solid var(--hightlight-color-special);
 }
 
-
 #switch span {
-display: block;
-width: 64px;
-height: 24px;
-border-radius: 9999px;
-border: 1px solid var(--stroke-color);
-background: var(--surface-color);
--webkit-backdrop-filter: blur(4px);
-
+  display: block;
+  width: 64px;
+  height: 24px;
+  border-radius: 9999px;
+  border: 1px solid var(--stroke-color);
+  background: var(--surface-color);
+  -webkit-backdrop-filter: blur(4px);
 }
-
 
 /* links */
 ul {
@@ -123,7 +116,7 @@ ul li a {
 
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  
+
   text-decoration: none;
   font-weight: 500;
   transition: background 0.7s;
@@ -134,8 +127,8 @@ ul li a:hover {
   background: var(--surface-color-houver);
   border: 1.3px solid rgba(120, 76, 120, 0.434);
   background: rgba(72, 3, 72, 0.492);
-    display: flex;
-    border: 1.5px solid rgb(175, 123, 175);
+  display: flex;
+  border: 1.5px solid rgb(175, 123, 175);
 }
 
 /*social-links*/
@@ -152,52 +145,50 @@ ul li a:hover {
   padding: 13px;
   transition: background 02s;
   border-radius: 50%;
-  
-
 }
 
 #social-links a:hover {
   background: var(--hightlight-color);
   display: flex;
   border: 1.5px solid rgb(175, 123, 175);
-
-
 }
 /*Mensagem ao Visualizador*/
 footer {
-padding: 25px 0;
-text-align: center;
-font-size: 15px;
-font-style: italic;
-color: var(--text-color);
+  padding: 25px 0;
+  text-align: center;
+  font-size: 15px;
+  font-style: italic;
+  color: var(--text-color);
 }
-
 
 /* midia queries */
 
-@midia (min-width 700px)
-{
-
+@midia (min-width 700px) {
   :root {
-  --bg-url: url(./assets/bg-desktop.jpg); }
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
 
   .light {
-  --bg-url: url(./assets/bg-desktop-light.jpg); }
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
-
 
 /* animation */
 @keyframes slide-in {
-  from { 
-    left: 0;  }
+  from {
+    left: 0;
+  }
 
-  to { 
-    left: 50%; }
+  to {
+    left: 50%;
+  }
 }
 
 @keyframes slide-back {
-  from {  left: 50%; 
+  from {
+    left: 50%;
   }
- to: {left: 0; 
+  to {
+    left: 0;
   }
 }
