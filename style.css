@@ -74,7 +74,7 @@ border-radius: 50%;
 
 position: absolute;
 z-index: 1;
-leftt: 0;
+left: 0;
 transform: translateY(-50%);
 top: 50%;
 }
@@ -175,4 +175,11 @@ color: var(--text-color);
 
     .light {
     --bg-url: url(./assets/bg-desktop-light.jpg);
+}
+
+/* animation */
+
+@keyframes slide-in {
+
+
 }
